@@ -29,18 +29,14 @@ const addTarea = (e) =>{
     const textoTarea = document.getElementById('tarea').value;
     listaDeTareas.push(textoTarea);
 
-    console.log(textoTarea);
-
     crearLista(textoTarea, listaDeTareas.length -1);
 }
 
 const eliminarTarea = (indice) => {
-    // Eliminar la tarea del array
     listaDeTareas.splice(indice, 1);
 
     // Eliminar la tarea del DOM
     const tareaEliminada = document.getElementById(indice);
-    console.log(tareaEliminada);
     tareaEliminada.remove();
 }
 
