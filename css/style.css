@@ -12,3 +12,7 @@ body{
 main{
     flex-grow: 1;
 }
+
+.card-header{
+    text-align: end;
+}
